@@ -1,0 +1,246 @@
+/*fonts*/
+
+@font-face {
+    font-family: 'Arkhip';
+    src: url('../font/arkhip.eot'); /* IE 9 Compatibility Mode */
+    src: url('../font/arkhip.eot?#iefix') format('embedded-opentype'), /* IE < 9 */ url('../font/arkhip.woff2') format('woff2'), /* Super Modern Browsers */ url('../font/arkhip.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */ url('../font/arkhip.ttf') format('truetype'), /* Safari, Android, iOS */ url('../font/arkhip.svg#arkhip') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Nico-Moji';
+    src: url('../font/Nico-Moji.ttf.woff') format('woff'),
+    url('../font/Nico-Moji.ttf.svg#Nico-Moji') format('svg'),
+    url('../font/Nico-Moji.ttf.eot'),
+    url('../font/Nico-Moji.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arodora Pro';
+    src: url('../font/ArodoraPro-Light.woff2') format('woff2'),
+    url('../font/ArodoraPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: local('NEXT ART SemiBold'), local('NEXTART-SemiBold'), url('../font/Nextartsemibold.woff2') format('woff2'), url('../font/Nextartsemibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: local('NEXT ART Light'), local('NEXTART-Light'), url('../font/Nextartlight.woff2') format('woff2'), url('../font/Nextartlight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: local('NEXT ART'), local('NEXTART'), url('../font/Nextart.woff2') format('woff2'), url('../font/Nextart.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: local('NEXT ART Heavy'), local('NEXTART-Heavy'), url('../font/Nextartheavy.woff2') format('woff2'), url('../font/Nextartheavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: local('NEXT ART Bold'), local('NEXTART-Bold'), url('../font/Nextartbold.woff2') format('woff2'), url('../font/Nextartbold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*обуление*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*content*/
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header {
+    background: #2a2a2a;
+    height: 807px;
+    width: 100%;
+}
+
+.nav_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 40px;
+}
+
+.nav_content-menu span {
+    font-family: 'Arodora Pro';
+    margin-left: 145px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+    cursor: pointer;
+
+
+    color: #E4E4E4;
+    padding-bottom: 4px;
+    transition: border-bottom-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav_content-menu span:hover {
+    border-bottom: 2px solid #e2a100;
+}
+
+.nav_content-menu span:first-child {
+    margin-left: 0px;
+}
+
+.nav_content-menu span:last-child {
+    margin-right: 92px;
+}
+
+.nav_content-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav_content-logo span {
+    margin-left: 15px;
+
+    font-family: 'Nico-Moji';
+    font-size: 18px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.header_content {
+    display: flex;
+}
+
+.header_content-name {
+    font-family: 'NEXT ART';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    display: flex;
+
+    /* text */
+
+    color: #E4E4E4;
+
+    flex-direction: column;
+    margin-top: 190px;
+}
+
+.header_content-name strong {
+    font-family: 'NEXT ART';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+
+    /* text */
+
+    color: #E4E4E4;
+}
+
+.header_content-text span {
+    font-family: 'Arodora Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    /* text */
+
+    color: #E4E4E4;
+
+    margin: 27px 0px;
+}
+
+.header_content-text button {
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+    box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+    border-radius: 6px;
+
+    font-family: 'NEXT ART';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    outline: none;
+    border: none;
+    padding: 14px 40px;
+    cursor: pointer;
+    transition: background-color ease-in-out 1s;
+}
+.header_content-text button:hover {
+    background: #000000;
+    color: #e29d00;
+}
